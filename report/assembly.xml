@@ -83,10 +83,6 @@
       <patternset refid="connect-report.versus.cap" />
     </unzip>
 
-    <copy todir="${outdir}/marketplace/install/bin" overwrite="true">
-      <artifact:resolveFile key="org.nuxeo:nuxeo-launcher::jar:jar-with-dependencies:"/>
-    </copy>
-
     <!-- Generate install.xml content -->
     <!-- See documentation at http://doc.nuxeo.com/x/IgIz -->
     <var name="install.bundles" value="" />
