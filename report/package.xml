@@ -6,11 +6,11 @@
   <uninstaller restart="true" />
   <hotreload-support>false</hotreload-support>
   <supported>true</supported>
-  <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance>
+  <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
   <production-state>testing</production-state>
   <nuxeo-validation>none</nuxeo-validation>
   <platforms>
-    <platform>cap-@DISTVERSION@</platform>
+    <platform>cap-@DISTRIB_VERSION@</platform>
   </platforms>
   <visibility>PUBLIC</visibility>
 </package>
