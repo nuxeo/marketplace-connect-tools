@@ -1,0 +1,8 @@
+<!-- See documentation at http://doc.nuxeo.com/x/IgIz -->
+<install>
+  <update file="${package.root}/install/bin" todir="${env.bundles}/../../bin"/>
+  @BUNDLES@
+  @LIBS@
+  @PROPERTIES@
+  @TEMPLATES@
+</install>

@@ -1,0 +1,16 @@
+<package type="addon" name="nuxeo-connect-tools-report" version="@VERSION@">
+  <title>Nuxeo Connect Report Tools</title>
+  <description>Dump configuration and introspect runtime for being investited nuxeo's side.</description>
+  <vendor>Nuxeo</vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <hotreload-support>false</hotreload-support>
+  <supported>true</supported>
+  <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance>
+  <production-state>testing</production-state>
+  <nuxeo-validation>none</nuxeo-validation>
+  <platforms>
+    <platform>cap-@DISTVERSION@</platform>
+  </platforms>
+  <visibility>PUBLIC</visibility>
+</package>

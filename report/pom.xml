@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.nuxeo.marketplace.connect.tools</groupId>
+    <artifactId>nuxeo-marketplace-connect-tools</artifactId>
+    <version>0.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>nuxeo-marketplace-connect-tools-report</artifactId>
+  
+  <name>Nuxeo Connect Tools Report Marketplace</name>
+  <description>Nuxeo Connect Tools Report Marketplace</description>
+
+  <packaging>zip</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.nuxeo.ecm.distribution</groupId>
+      <artifactId>nuxeo-distribution-cap</artifactId>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.distribution</groupId>
+      <artifactId>nuxeo-distribution-cap</artifactId>
+      <type>zip</type>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.connect.tools</groupId>
+      <artifactId>nuxeo-connect-tools-report-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.connect.tools</groupId>
+      <artifactId>nuxeo-connect-tools-report-core</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.nuxeo.build</groupId>
+        <artifactId>ant-assembly-maven-plugin</artifactId>
+        <configuration>
+          <buildFiles>
+            <buildFile>${basedir}/assembly.xml</buildFile>
+          </buildFiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
