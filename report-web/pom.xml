@@ -7,10 +7,10 @@
     <version>0.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>nuxeo-marketplace-connect-tools-report</artifactId>
+  <artifactId>nuxeo-marketplace-connect-tools-report-web</artifactId>
   
-  <name>Nuxeo Connect Tools Report Marketplace</name>
-  <description>Nuxeo Connect Tools Report Marketplace</description>
+  <name>Nuxeo Connect Tools Report Web Marketplace</name>
+  <description>Nuxeo Connect Tools Report Web Marketplace</description>
 
   <packaging>zip</packaging>
 
@@ -28,7 +28,13 @@
     </dependency>
     <dependency>
       <groupId>org.nuxeo.connect.tools</groupId>
-      <artifactId>nuxeo-connect-tools-report-core</artifactId>
+      <artifactId>nuxeo-connect-tools-report-web</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.nuxeo.connect.tools</groupId>
+          <artifactId>nuxeo-connect-tools-report-core</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
