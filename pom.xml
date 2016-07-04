@@ -36,6 +36,7 @@
   <modules>
     <module>report</module>
     <module>report-web</module>
+    <module>ftest</module>
   </modules>
 
 </project>
