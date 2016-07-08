@@ -1,6 +1,6 @@
 <package type="addon" name="nuxeo-connect-tools-report" version="@VERSION@">
   <title>Nuxeo Connect Report Tools</title>
-  <description>Dump configuration and introspect runtime for being investited nuxeo's side.</description>
+  <description>Dump your Nuxeo server configuration and gather information about your environment so as to share it with the Nuxeo support team.</description>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
@@ -12,5 +12,5 @@
   <platforms>
     <platform>cap-@DISTRIB_VERSION@</platform>
   </platforms>
-  <visibility>PUBLIC</visibility>
+  <visibility>MARKETPLACE</visibility>
 </package>
