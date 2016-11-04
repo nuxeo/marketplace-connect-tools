@@ -32,7 +32,7 @@
 
     <!-- Base distribution NXR -->
     <copy todir="${outdir}">
-      <artifact:file key="org.nuxeo.ecm.distribution:nuxeo-distribution-cap::zip" />
+      <artifact:file key="org.nuxeo.ecm.distribution:nuxeo-distribution-server::zip" />
     </copy>
 
     <!-- Nuxeo bundles -->
@@ -66,21 +66,22 @@
     </copy>
     <nx:rmdups dir="${outdir}/nxr/lib" />
     <!-- Temporary ZIP Nuxeo NXR to compare with base distribution NXR -->
+    <touch file="${outdir}/nxr/empty-zipdiff-placeholder-to-be-removed" />
     <zip destfile="${outdir}/nxr-${maven.project.version}.zip" basedir="${outdir}/nxr" />
     <!-- Optionally attach the NXR for later use by other modules -->
     <artifact:attach file="${outdir}/nxr-${maven.project.version}.zip" classifier="nxr" type="zip" />
 
     <!-- Your MP only needs to include files not already provided by the base distribution -->
     <nx:zipdiff file1="${outdir}/nxr-${maven.project.version}.zip"
-                file2="${outdir}/nuxeo-distribution-cap-${nuxeo.distribution.version}.zip"
+                file2="${outdir}/nuxeo-distribution-server-${nuxeo.distribution.version}.zip"
                 includesfile="${outdir}/includes"
                 excludesfile="${outdir}/excludesfile"
-                patternsetid="connect-report.versus.cap"
+                patternsetid="connect-report.versus.server"
                 ignoreContent="false"
                 ignoreContentPattern=".*\.jar$">
     </nx:zipdiff>
     <unzip src="${outdir}/nxr-${maven.project.version}.zip" dest="${outdir}/marketplace/install">
-      <patternset refid="connect-report.versus.cap" />
+      <patternset refid="connect-report.versus.server" />
     </unzip>
 
     <!-- Generate install.xml content -->
