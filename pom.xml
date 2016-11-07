@@ -20,12 +20,6 @@
     <dependencies>
       <dependency>
         <groupId>org.nuxeo.marketplace.connect.tools</groupId>
-        <artifactId>nuxeo-marketplace-connect-tools-report</artifactId>
-        <version>${project.version}</version>
-        <type>zip</type>
-      </dependency>
-      <dependency>
-        <groupId>org.nuxeo.marketplace.connect.tools</groupId>
         <artifactId>nuxeo-marketplace-connect-tools-report-web</artifactId>
         <version>${project.version}</version>
         <type>zip</type>
@@ -34,7 +28,6 @@
   </dependencyManagement>
 
   <modules>
-    <module>report</module>
     <module>report-web</module>
     <module>ftest</module>
   </modules>

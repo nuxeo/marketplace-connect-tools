@@ -9,9 +9,6 @@
   <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
   <production-state>testing</production-state>
   <nuxeo-validation>none</nuxeo-validation>
-  <dependencies>
-    <package>nuxeo-connect-tools-report:@VERSION@</package>
-  </dependencies>
   <platforms>
     <platform>cap-@DISTRIB_VERSION@</platform>
   </platforms>

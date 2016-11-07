@@ -40,12 +40,6 @@
     </dependency>
     <dependency>
       <groupId>org.nuxeo.marketplace.connect.tools</groupId>
-      <artifactId>nuxeo-marketplace-connect-tools-report</artifactId>
-      <type>zip</type>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.nuxeo.marketplace.connect.tools</groupId>
       <artifactId>nuxeo-marketplace-connect-tools-report-web</artifactId>
       <type>zip</type>
       <scope>test</scope>
