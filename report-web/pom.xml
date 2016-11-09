@@ -8,7 +8,7 @@
   </parent>
 
   <artifactId>nuxeo-marketplace-connect-tools-report-web</artifactId>
-  
+
   <name>Nuxeo Connect Tools Report Web Marketplace</name>
   <description>Nuxeo Connect Tools Report Web Marketplace</description>
 
@@ -17,24 +17,13 @@
   <dependencies>
     <dependency>
       <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-distribution-server</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-distribution-server</artifactId>
+      <artifactId>nuxeo-nxr-server</artifactId>
       <type>zip</type>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.connect.tools</groupId>
       <artifactId>nuxeo-connect-tools-report-web</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>org.nuxeo.connect.tools</groupId>
-          <artifactId>nuxeo-connect-tools-report-core</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
   </dependencies>
 
