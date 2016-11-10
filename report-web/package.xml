@@ -10,7 +10,8 @@
   <production-state>testing</production-state>
   <nuxeo-validation>none</nuxeo-validation>
   <platforms>
-    <platform>server-@DISTRIB_VERSION@*</platform>
+    <platform>server-@DISTRIB_VERSION@</platform>
+    <platform>server-@DISTRIB_VERSION@-*</platform>
   </platforms>
   <visibility>MARKETPLACE</visibility>
 </package>
