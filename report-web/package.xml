@@ -1,6 +1,6 @@
 <package type="addon" name="nuxeo-connect-tools-report-web" version="@VERSION@">
   <title>Nuxeo Connect Report Tools</title>
-  <description>Dump your Nuxeo server configuration through a graphical interface and gather information about your environment so as to share it with the Nuxeo support team.</description>
+  <description>Nuxeo Connect Report Tools Web is a Nuxeo addon that provides a graphical interface to visualise the output of the nuxeoctl command connect-report and gather information about your environment so as to share it with the Nuxeo support team.</description>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
