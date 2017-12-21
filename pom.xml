@@ -11,7 +11,7 @@
   <artifactId>nuxeo-marketplace-connect-tools</artifactId>
   <packaging>pom</packaging>
   
-  <version>0.1.3</version>
+  <version>0.1.4-SNAPSHOT</version>
 
   <name>Nuxeo Connect Tools Marketplace</name>
   <description>Nuxeo Connect Tools Marketplace</description>
