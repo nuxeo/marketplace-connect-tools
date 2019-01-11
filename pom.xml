@@ -4,14 +4,14 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId> 
-    <version>10.10-SNAPSHOT</version>
+    <version>11.1-SNAPSHOT</version>
   </parent>
 
   <groupId>org.nuxeo.marketplace.connect.tools</groupId>
   <artifactId>nuxeo-marketplace-connect-tools</artifactId>
   <packaging>pom</packaging>
   
-  <version>0.2.3-SNAPSHOT</version>
+  <version>0.3.0-SNAPSHOT</version>
 
   <name>Nuxeo Connect Tools Marketplace</name>
   <description>Nuxeo Connect Tools Marketplace</description>
